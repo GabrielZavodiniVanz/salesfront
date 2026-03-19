@@ -1,0 +1,614 @@
+:root {
+    --bg-main: #FAF6EB;
+    --bg-alt: #FFF9F1;
+    --pink-main: #FF0988;
+    --orange-sub: #F0983C;
+    --blue-box: #A4D7F6;
+    --green-warranty: #B8E986;
+    --footer-bg: #0A192F;
+    --text-dark: #333333;
+    --gray-bg: #EAEAEA;
+    --font-titles: 'Outfit', sans-serif;
+    --font-text: 'Inter', sans-serif;
+}
+
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-text);
+    color: var(--text-dark);
+    background-color: var(--bg-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+.title-pink,
+.title-dark,
+.title-big-pink {
+    font-family: var(--font-titles);
+    line-height: 1.3;
+}
+
+.title-pink {
+    color: var(--pink-main);
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.title-dark {
+    color: var(--text-dark);
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.title-big-pink {
+    color: var(--pink-main);
+    font-size: 3.5rem;
+    margin: 1rem 0;
+}
+
+.subtitle-orange {
+    color: var(--orange-sub);
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.italic-text {
+    font-style: italic;
+    color: #666;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.mt-2 {
+    margin-top: 1rem;
+}
+
+.mt-3 {
+    margin-top: 1.5rem;
+}
+
+.mt-4 {
+    margin-top: 2.5rem;
+}
+
+.mb-2 {
+    margin-bottom: 1rem;
+}
+
+.mb-3 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-4 {
+    margin-bottom: 2rem;
+}
+
+.my-3 {
+    margin: 1.5rem 0;
+}
+
+.py-5 {
+    padding: 4rem 1.5rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Layout & Containers */
+.dobra {
+    padding: 4.5rem 1.5rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.dual-col {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-items: center;
+}
+
+.dual-col .col-text,
+.dual-col .col-img {
+    flex: 1 1 350px;
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.rounded-img {
+    border-radius: 12px;
+}
+
+.shadow {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+}
+
+/* Background Colors */
+.bg-main {
+    background-color: var(--bg-main);
+}
+
+.bg-alt {
+    background-color: var(--bg-alt);
+}
+
+.bg-gray {
+    background-color: var(--gray-bg);
+}
+
+/* Buttons */
+.btn-pink {
+    display: inline-block;
+    background-color: var(--pink-main);
+    color: #fff;
+    font-family: var(--font-titles);
+    text-decoration: none;
+    padding: 1.2rem 2.5rem;
+    border-radius: 50px;
+    font-size: 1.15rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 6px 20px rgba(255, 9, 136, 0.4);
+    text-align: center;
+}
+
+.btn-pink:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 9, 136, 0.5);
+    color: #fff;
+}
+
+.btn-large {
+    font-size: 1.4rem;
+    padding: 1.4rem 3rem;
+    display: block;
+    width: fit-content;
+}
+
+/* Section 1 - Hero */
+.hero .title-pink {
+    font-size: 2.3rem;
+}
+
+.hero-text {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.hero-text p {
+    margin-bottom: 0.4rem;
+}
+
+.small-text {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.8rem;
+    text-align: center;
+    max-width: 320px;
+}
+
+/* Section 2 - Dor */
+.dor-main-text {
+    font-size: 1.15rem;
+    margin-bottom: 1.8rem;
+    line-height: 1.6;
+}
+
+.bullet-list {
+    list-style: none;
+}
+
+.bullet-list li {
+    position: relative;
+    padding-left: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.bullet-list li::before {
+    content: "•";
+    color: var(--orange-sub);
+    font-size: 2rem;
+    position: absolute;
+    left: 0;
+    top: -8px;
+}
+
+/* Section 3 - Presentacion */
+.subtitle-text {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.versions-list {
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin: 1.5rem 0;
+    color: var(--text-dark);
+}
+
+.versions-list p {
+    margin-bottom: 0.5rem;
+}
+
+/* Section 4 - Sistema */
+.bg-blue {
+    background-color: var(--blue-box);
+    padding: 3rem 2.5rem;
+    border-radius: 24px;
+}
+
+.box-border {
+    border: 3px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.check-list {
+    list-style: none;
+    text-align: left;
+}
+
+.check-list li {
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.format-check li {
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+}
+
+/* Section 5 - Transição */
+.texto-transicao {
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+/* Section 6 - Bonus */
+.selo-bonus {
+    background-color: var(--pink-main);
+    color: #fff;
+    font-family: var(--font-titles);
+    display: inline-block;
+    padding: 0.6rem 2rem;
+    border-radius: 40px;
+    font-size: 1rem;
+    margin: 0 auto 1.5rem auto;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 15px rgba(255, 9, 136, 0.3);
+}
+
+.bonus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2.5rem;
+}
+
+.bonus-item {
+    text-align: center;
+    background: #fff;
+    padding: 2rem 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s;
+}
+
+.bonus-item:hover {
+    transform: translateY(-5px);
+}
+
+.bonus-item img {
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.bonus-item p {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--text-dark);
+}
+
+/* Section Extra - Horizontal */
+.feature-text {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+/* Section 8 - Ancoragem */
+.ancoragem-text {
+    font-size: 1.25rem;
+    color: #444;
+}
+
+/* Section 9 - Garantia */
+.garantia {
+    background: linear-gradient(135deg, #f3fdf0 0%, #e0f8d1 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 5rem 1.5rem;
+}
+
+.garantia::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(184, 233, 134, 0.4) 0%, transparent 70%);
+    top: -100px;
+    left: -100px;
+    border-radius: 50%;
+}
+
+.garantia::after {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(164, 215, 246, 0.3) 0%, transparent 70%);
+    bottom: -150px;
+    right: -100px;
+    border-radius: 50%;
+}
+
+.garantia-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 24px;
+    padding: 3.5rem 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.garantia-card:hover {
+    transform: translateY(-8px);
+}
+
+.garantia-icon-wrapper {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(135deg, #B8E986 0%, #85C849 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem auto;
+    box-shadow: 0 10px 20px rgba(184, 233, 134, 0.4);
+    animation: float 4s ease-in-out infinite;
+}
+
+.garantia-icon {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.garantia-text {
+    font-size: 1.15rem;
+    color: #555;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.highlight-green {
+    color: #4a8a11;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Section 10 - FAQ */
+.accordion {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    background: #fff;
+    margin-bottom: 1.2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.accordion-header {
+    width: 100%;
+    text-align: left;
+    padding: 1.4rem 1.8rem;
+    background: none;
+    border: none;
+    font-family: var(--font-titles);
+    font-size: 1.15rem;
+    color: var(--text-dark);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s;
+}
+
+.accordion-header:hover {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.accordion-header .icon {
+    color: var(--pink-main);
+    font-size: 1.6rem;
+    font-weight: normal;
+    transition: transform 0.3s;
+}
+
+.accordion-header.active .icon {
+    transform: rotate(45deg);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 1.8rem;
+}
+
+.accordion-content p {
+    padding-bottom: 1.5rem;
+    color: #555;
+    font-size: 1.05rem;
+}
+
+/* Section 11 - CTA Final */
+.final-phrase {
+    font-size: 1.6rem;
+    color: #444;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--footer-bg);
+    color: #fff;
+    padding: 4rem 1.5rem;
+}
+
+.footer-title {
+    font-family: var(--font-titles);
+    font-size: 1.3rem;
+}
+
+.footer-email {
+    color: #8892B0;
+    font-size: 1.05rem;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 0.5rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-links .separator {
+    margin: 0 0.8rem;
+    color: #8892B0;
+}
+
+.footer-copy {
+    font-size: 0.9rem;
+    color: #8892B0;
+    margin-top: 2.5rem;
+}
+
+/* Responsive Utilities */
+@media (max-width: 768px) {
+
+    .title-pink,
+    .title-dark {
+        font-size: 1.6rem;
+    }
+
+    .title-big-pink {
+        font-size: 2.5rem;
+    }
+
+    h1.title-pink {
+        font-size: 1.8rem;
+    }
+
+    .dobra {
+        padding: 3.5rem 1.2rem;
+    }
+
+    .bg-blue {
+        padding: 2rem 1.5rem;
+    }
+
+    .hero .col-text {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .hero .btn-pink {
+        width: 100%;
+        padding: 1.2rem 1rem;
+    }
+
+    .hero .small-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bonus-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dual-col {
+        gap: 2rem;
+    }
+
+    .btn-large {
+        width: 100%;
+        padding: 1.2rem 1.5rem;
+    }
+
+    .cta-final .btn-pink {
+        width: 100%;
+    }
+}
