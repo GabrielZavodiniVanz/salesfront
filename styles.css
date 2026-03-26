@@ -536,6 +536,71 @@ h3,
     color: #444;
 }
 
+/* New Revision Elements */
+.product-name-tag {
+    font-family: var(--font-titles);
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--pink-main);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 0.8rem;
+    opacity: 0.85;
+}
+
+.urgency-text {
+    font-size: 0.9rem;
+    color: var(--orange-sub);
+    font-weight: 600;
+    margin-top: 0.6rem;
+    text-align: center;
+    max-width: 320px;
+}
+
+.empathy-line {
+    font-size: 1.3rem;
+    color: #555;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.print-ready-text {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--orange-sub);
+    margin-top: 0.5rem;
+}
+
+.materials-headline {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--pink-main);
+    margin-bottom: 0.8rem;
+}
+
+.bonus-extra-line {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--orange-sub);
+    margin-top: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.webapp-highlight {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--pink-main);
+}
+
+.emotional-anchor {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--orange-sub);
+    font-style: italic;
+}
+
 /* Footer */
 .footer {
     background-color: var(--footer-bg);
